@@ -14,7 +14,10 @@ import { convex } from '@/lib/convex';
 import '@/index.css'
 import { AppLayout } from '@/components/layout/AppLayout'
 import { HomePage } from '@/pages/HomePage'
-import { AboutPage } from '@/pages/AboutPage'
+import { IdePage } from '@/pages/IdePage'
+import { DesignerPage } from '@/pages/DesignerPage'
+import { TuningPage } from '@/pages/TuningPage'
+import { TerminalPage } from '@/pages/TerminalPage'
 
 const router = createBrowserRouter([
   {
@@ -22,7 +25,10 @@ const router = createBrowserRouter([
     errorElement: <RouteErrorBoundary />,
     children: [
       { path: "/", element: <HomePage /> },
-      { path: "/about", element: <AboutPage /> },
+      { path: "/ide", element: <IdePage /> },
+      { path: "/designer", element: <DesignerPage /> },
+      { path: "/tuning", element: <TuningPage /> },
+      { path: "/terminal", element: <TerminalPage /> },
     ],
   },
 ]);
